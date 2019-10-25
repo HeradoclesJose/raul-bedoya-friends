@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Para obtener el mejor corte con el mínimo desperdicio de papel, utilice la calculadora de Cortes de papel fabricadebolsas.com">
+    <meta name="author" content="Presedo Marketing">
+    <meta name="robots" content="index,follow">
+    <title>Calculadora de corte de Papel.</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/copel.css" rel="stylesheet">
+    <link href="css/calcu.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid menu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="http://fabricadeempaques.com/index.html"><img src="img/logocopel70.png" alt="Origamica">
+        </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+
+            <li class="dropdown">
+            </li>
+
+            <li class="dropdown">
+            </li>
+
+            <li class="dropdown">
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      
+    </nav>
+<div class="container-fluid calcu">
+    <div id="formulario">
+        <div class="row row-centered flex-row row">
+          <div class="col-sm-4 ext">
+<div class="col-sm-10 col-sm-offset-1 col-centered">
+   <h2>INTRODUZCA DATOS</h2>
+      <form class="form-horizontal" role="form" id="form_calc">
+              <h4>Tamaño del pliego</h4>
+              <div class="form-group">
+              <div class="col-sm-12 col-centered">
+              <div class="input-group calculadoraizq">
+              <input class="form-control" id="papel_ancho" placeholder="Ancho" aria-describedby="basic-addon2" maxlength="5" tabindex="1" required>
+              <span class="input-group-addon" id="basic-addon2">cm</span>
+              </div>
+              </div>
+              </div><!-- /.form-group -->
+
+              <div class="form-group">
+              <div class="col-sm-12 col-centered">
+              <div class="input-group calculadoraizq">
+              <input class="form-control" id="papel_largo" placeholder="Largo" aria-describedby="basic-addon2" maxlength="5" tabindex="2" required>
+              <span class="input-group-addon" id="basic-addon2">cm</span>
+              </div>
+              </div>
+              </div><!-- /.form-group -->
+
+        <h4>Medidas de corte</h4>
+           <div class="form-group">
+              <div class="col-sm-12 col-centered">
+                <div class="input-group calculadoraizq">
+                <input class="form-control" id="corte_ancho" placeholder="Ancho" aria-describedby="basic-addon2" maxlength="5" tabindex="3" required>
+                <span class="input-group-addon" id="basic-addon2">cm</span>
+                </div>
+              </div>
+          </div><!-- /.form-group -->
+
+          <div class="form-group">
+            <div class="col-sm-12 col-centered">
+              <div class="input-group calculadoraizq">
+              <input class="form-control" id="corte_largo" placeholder="Largo" aria-describedby="basic-addon2" maxlength="5" tabindex="4" required>
+              <span class="input-group-addon" id="basic-addon2">cm</span>
+              </div>
+            </div> 
+          </div><!-- /.form-group -->
+
+        <h4>Ejemplares</h4>
+          <div class="form-group">
+              <div class="col-sm-12 col-centered">
+                <div class="input-group calculadoraizq">
+              <input class="form-control" id="cortes_deseados" placeholder="Número" tabindex="5">
+              <span class="input-group-addon" id="basic-addon2">un</span>
+              </div>
+            </div>
+          </div><!-- /.form-group -->
+        </form>
+                <table class="table">
+                   <tr>
+                     <td class="text-center"><button type="submit" tabindex="6" class="btn btn-primary btn-circle" id="maximo"><i class="fa fa-th"></i></button><br>Máximo</td>
+                     <td class="text-center"><button type="button" tabindex="7" class="btn btn-primary btn-circle" id="orientacion_h"><i class="fa fa-arrows-h"></i></button><br>Horizontal</td>
+                  </tr>
+                   <tr>
+                     <td class="text-center"><button type="button" tabindex="8" class="btn btn-primary btn-circle" id="orientacion_v"><i class="fa fa-arrows-v"></i></button><br>Vertical</td>
+                     <td class="text-center"><button type="submit" tabindex="9" class="btn btn-info btn-circle" id="reset"><i class="fa fa-refresh"></i></button><br>Reiniciar</td>
+                  </tr>
+                </table>
+            </div><!-- /col-sm-10 col-sm-offset-1 col-centered -->
+          </div><!-- /col-sm-4 -->
+
+          <div class="col-sm-4 medio">
+              <div class="col-sm-12col-centered">
+              <h2>PLIEGO</h2 >
+              <div id="dibujo">
+              <canvas id="micanvas">
+              Su navegador no soporta elementos Canvas
+              </canvas>
+              </div><!-- /dibujo -->
+              </div><!-- /col-sm-10 col-sm-offset-1 col-centered -->
+          </div><!-- /col-sm-4 -->
+
+          <div class="col-sm-4 ext">
+              <div class="col-sm-10 col-sm-offset-1 col-centered">
+              <h2>RESULTADO</h2>
+              <table class="table table-bordered">
+              <tr>
+              <td><label class="control-label" for="papel_ancho">Ejemplares por pliego</label></td>
+              <td><span class="label-result" id="cortes_pliego">0</span></td>
+              </tr>
+              <tr>
+              <td><label class="control-label" for="numero_cortes_horizontal">Horizontales</label></td>
+              <td><span class="label-result" id="numero_cortes_horizontal">0</span></td>
+              </tr>
+              <tr>
+              <td><label class="control-label" for="numero_cortes_vertical">Verticales</label></td>
+              <td><span class="label-result" id="numero_cortes_vertical">0</span></td>
+              </tr>
+              <tr>
+              <td><label class="control-label" for="pliegos">Total pliegos</label></td>
+              <td><span class="label-result" id="pliegos">0</span></td>
+              </tr>
+              <tr>
+              <td><label class="control-label" for="numero_cortes">Total ejemplares</label></td>
+              <td><span class="label-result" id="numero_cortes">0</span></td>
+              </tr>
+              </table>
+              <table class="table table-bordered">
+              <tr>
+              <td class="success"><span class="utilizada">% Utilizado</span></td>
+              <td class="warning"><span class="inutilizada">% Sin utilizar</span></td>
+              </tr>
+              <tr>
+              <td class="success"><span id="area_utilizada">0</span></td>
+              <td class="warning"> <span id="area_inutilizada">0</span></td>
+              </tr>
+              </table>
+        </div><!-- /col-sm-10 col-sm-offset-1 col-centered -->
+        </div><!-- /col-sm-4 -->
+      </div><!-- /row row-centered -->
+  </div><!-- /.formulario -->
+</div><!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+            <div class="page-header">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/calculadora.js" ></script>
+    <script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
